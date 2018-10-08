@@ -27,7 +27,7 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
 import SectionLogin from "./Sections/SectionLogin.jsx";
 import SectionExamples from "./Sections/SectionExamples.jsx";
 import SectionDownload from "./Sections/SectionDownload.jsx";
-import image from "assets/img/lingo-logo.png";
+import image from "assets/img/lingo-logo2.png";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
 class Components extends React.Component {
@@ -36,22 +36,23 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand={image}
+          brand="Let's Lingo"
+          brandimage={image}
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 400,
+            height: 10,
             color: "white"
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/hub.jpg")}>
+        <Parallax image={require("assets/img/hub2.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
+                  <h1 className={classes.title}>Learn French in Bournville</h1>
                   <h3 className={classes.subtitle}>
                     A Badass Material-UI Kit based on Material Design.
                   </h3>
